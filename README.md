@@ -1,3 +1,14 @@
+# Dotdigital toolkit for Shopify Hydrogen
+
+This repository is a Hydrogen demo store with additional components and customisations to demonstrate how to integrate Dotdigital features into your storefront.
+
+## Instructions
+Copy the example env file and update values as required:
+```
+cp env.sample .env
+```
+
+---
 # Hydrogen Demo Store
 
 Hydrogen is a React framework and SDK that you can use to build fast and dynamic Shopify custom storefronts.
