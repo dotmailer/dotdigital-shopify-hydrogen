@@ -15,6 +15,8 @@ import {HeaderFallback, EventsListener} from '~/components';
 import type {CountryCode} from '@shopify/hydrogen/storefront-api-types';
 import {DefaultSeo, NotFound} from '~/components/index.server';
 
+import WebBehaviorTracking from '~/components/DotdigitalWebBehaviorTracking.client';
+
 function App({request}: HydrogenRouteProps) {
   const pathname = new URL(request.normalizedUrl).pathname;
   const localeMatch = /^\/([a-z]{2})(\/|$)/i.exec(pathname);
@@ -35,6 +37,7 @@ function App({request}: HydrogenRouteProps) {
               basePath={countryCode ? `/${countryCode}/` : undefined}
             />
             <Route path="*" page={<NotFound />} />
+            <WebBehaviorTracking />
           </Router>
         </CartProvider>
         <PerformanceMetrics />
