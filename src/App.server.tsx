@@ -16,6 +16,7 @@ import type {CountryCode} from '@shopify/hydrogen/storefront-api-types';
 import {DefaultSeo, NotFound} from '~/components/index.server';
 
 import WebBehaviorTracking from '~/components/DotdigitalWebBehaviorTracking.client';
+import ChatWidget from './components/dotdigital/chat/ChatWidget.client';
 
 function App({request}: HydrogenRouteProps) {
   const pathname = new URL(request.normalizedUrl).pathname;
@@ -38,6 +39,7 @@ function App({request}: HydrogenRouteProps) {
             />
             <Route path="*" page={<NotFound />} />
             <WebBehaviorTracking />
+            <ChatWidget />
           </Router>
         </CartProvider>
         <PerformanceMetrics />
