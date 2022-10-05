@@ -78,3 +78,7 @@ jspm_packages/
 
 # Vite output
 dist
+
+# Editors
+.vscode
+.idea

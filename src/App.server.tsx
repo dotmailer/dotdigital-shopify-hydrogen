@@ -14,6 +14,11 @@ import {
 import {HeaderFallback, EventsListener} from '~/components';
 import type {CountryCode} from '@shopify/hydrogen/storefront-api-types';
 import {DefaultSeo, NotFound} from '~/components/index.server';
+import {
+  DotdigitalChatWidgetServer,
+  DotdigitalSiteTrackingServer,
+  DotdigitalWebBehaviorTrackingServer,
+} from '~/components/dotdigital';
 
 function App({request}: HydrogenRouteProps) {
   const pathname = new URL(request.normalizedUrl).pathname;
@@ -40,6 +45,9 @@ function App({request}: HydrogenRouteProps) {
         <PerformanceMetrics />
         {import.meta.env.DEV && <PerformanceMetricsDebug />}
         <ShopifyAnalytics cookieDomain="hydrogen.shop" />
+        <DotdigitalChatWidgetServer />
+        <DotdigitalWebBehaviorTrackingServer />
+        <DotdigitalSiteTrackingServer />
       </ShopifyProvider>
     </Suspense>
   );
