@@ -12,3 +12,7 @@ export {default as DotdigitalWebBehaviorTrackingClient} from './web-behavior-tra
 //Chat widget exports
 export {default as DotdigitalChatWidgetServer} from './chat-widget/DotdigitalChatWidget.server';
 export {default as DotdigitalChatWidgetClient} from './chat-widget/DotdigitalChatWidget.client';
+
+//Abandoned cart exports
+export {default as DotdigitalAbandonedCartServer} from './abandoned-cart/DotdigitalAbandonedCart.server';
+export {default as DotdigitalAbandonedCartClient} from './abandoned-cart/DotdigitalAbandonedCart.client';

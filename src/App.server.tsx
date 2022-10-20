@@ -18,6 +18,7 @@ import {
   DotdigitalChatWidgetServer,
   DotdigitalSiteTrackingServer,
   DotdigitalWebBehaviorTrackingServer,
+  DotdigitalAbandonedCartServer,
 } from '~/components/dotdigital';
 
 function App({request}: HydrogenRouteProps) {
@@ -48,6 +49,7 @@ function App({request}: HydrogenRouteProps) {
         <DotdigitalChatWidgetServer />
         <DotdigitalWebBehaviorTrackingServer />
         <DotdigitalSiteTrackingServer />
+        <DotdigitalAbandonedCartServer />
       </ShopifyProvider>
     </Suspense>
   );
