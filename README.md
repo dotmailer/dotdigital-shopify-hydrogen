@@ -71,6 +71,13 @@ Copy the example ENV file and update the values as required:
 ```
 cp env.sample .env
 ```
+---
+## Changelog
+
+### 1.0.0
+- Initial release
+- Includes components for site tracking, web behavior tracking, chat and abandoned cart
+- Includes a custom route for cart insight
 
 ---
 # Hydrogen Demo Store
@@ -78,10 +85,6 @@ cp env.sample .env
 Hydrogen is a React framework and SDK that you can use to build fast and dynamic Shopify custom storefronts.
 
 [Check out the docs](https://shopify.dev/custom-storefronts/hydrogen)
-
-[Run this template in JavaScript on StackBlitz](https://stackblitz.com/github/Shopify/hydrogen/tree/dist/templates/demo-store-js?file=package.json)
-
-[Run this template in TypeScript on StackBlitz](https://stackblitz.com/github/Shopify/hydrogen/tree/dist/templates/demo-store-ts?file=package.json)
 
 ## Getting started
 
