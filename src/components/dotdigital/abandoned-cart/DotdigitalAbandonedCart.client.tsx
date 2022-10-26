@@ -43,7 +43,6 @@ export default function DotdigitalAbandonedCartClient({
   config: DotdigitalEnvironment;
   customerEmail: string;
 }): null {
-  console.log(customerEmail);
   useEffect(() => {
     if (!init) {
       init = true;
