@@ -2,6 +2,8 @@
 
 This repository is a Hydrogen demo store with additional components and customisations to demonstrate how to integrate Dotdigital features into your custom storefront.
 
+- [View the demo store](https://dotdigital-shopify-hydrogen-00747ba9a02395cd0073.o2.myshopify.dev/)
+
 ## Our components
 
 We’ve built components to support three of our popular front-end tools: tracking, chat and abandoned cart. All of these have been added to `/src/App.server.tsx`.
